@@ -1,5 +1,5 @@
 # Algorithm
-Solve algorithm test in Leet or Programmers, in MI Lab
+Solve algorithm test in Leet or Programmers, in MI Lab  
 
 LAB : algorithm study with whole lab people  
 URS : algorithm study with Undergraduate Research Students
@@ -11,7 +11,8 @@ URS : algorithm study with Undergraduate Research Students
     2. ...
 2. URS
     1. [Binary Search](#binary-search) (22.03.04)
-    2. ...
+    2. [Graph](#graph) (22.03.11)
+    3. ...
 ---
 
 ### Leet222. Maximal Square
@@ -138,3 +139,47 @@ Explanation: Because the 4<sup>th</sup> row is incomplete,
 
 [출처](http://hsin.hr/coci/archive/2012_2013/contest3_tasks.pdf)
     </div></details>
+    
+---
+### Graph
+#### 1. Leet797. All Paths From Source to Target
+<details>
+    <summary>Details</summary>
+    <div markdown="1">
+        https://leetcode.com/problems/all-paths-from-source-to-target/</br>
+    Given a directed acyclic graph (<b>DAG</b>) of <code>n</code> nodes labeled from <code>0</code> to <code>n - 1</code>, find all possible paths from node <code>0</code> to node <code>n - 1</code> and return them in <b>any order</b>.</br>
+
+The graph is given as follows: <code>graph[i]</code> is a list of all nodes you can visit from node <code>i</code> (i.e., there is a directed edge from node i to node <code>graph[i][j]</code>).</br>
+
+ 
+
+**Example 1:**
+
+![image](https://user-images.githubusercontent.com/83002480/159167331-390ee53f-79f3-4bd9-bec3-a9741b8bad38.png)
+
+```
+Input: graph = [[1,2],[3],[3],[]]
+Output: [[0,1,3],[0,2,3]]
+Explanation: There are two paths: 0 -> 1 -> 3 and 0 -> 2 -> 3.
+```
+
+**Example 2:**
+
+![image](https://user-images.githubusercontent.com/83002480/159167340-a7f30e0e-ed26-49bd-adca-2c17c2e5fa66.png)
+
+```
+Input: graph = [[4,3,1],[3,2,4],[3],[4],[]]
+Output: [[0,4],[0,3,4],[0,1,3,4],[0,1,2,3,4],[0,1,4]]
+```
+ 
+
+**Constraints:**
+
+* <code>n == graph.length</code>
+* <code>2 <= n <= 15</code>
+* <code>0 <= graph[i][j] < n</code>
+* <code>graph[i][j] != i</code> (i.e., there will be no self-loops).
+* All the elements of <code>graph[i]</code> are <b>unique</b>.
+* The input graph is <b>guaranteed</b> to be a <b>DAG</b>.
+</div>
+</details>
