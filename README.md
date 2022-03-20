@@ -7,7 +7,7 @@ URS : algorithm study with Undergraduate Research Students
 ## Contents
 
 1. LAB  
-    1. [Leet222. Maximal Square](#leet222-maximal-square) (22.02.22)
+    1. [Leet221. Maximal Square](#leet221-maximal-square) (22.02.22)
     2. [Leet011. Container With Most Water](#leet011-container-with-most-water) (22.03.08)
     3. [Leet022. Generate Parentheses](#leet022-generate-parentheses) (22.03.15)
     4. ...
@@ -17,7 +17,7 @@ URS : algorithm study with Undergraduate Research Students
     3. ...
 ---
 
-### Leet222. Maximal Square
+### Leet221. Maximal Square
 <details>
   <summary>Details</summary>
   <div markdown="1">
