@@ -259,5 +259,5 @@ Output: [[0,4],[0,3,4],[0,1,3,4],[0,1,2,3,4],[0,1,4]]
 </details>
 
 #### 2. Dijkstra's Algorithm
-[code](https://github.com/Syzseisus/Algorithm/blob/main/Dijkstra.ipynb)
+[code](https://github.com/Syzseisus/Algorithm/blob/main/Dijkstra.ipynb)  
 [ShortestPath-Dijkstra-std.pdf](https://github.com/Syzseisus/Algorithm/files/8311431/ShortestPath-Dijkstra-std.pdf)
