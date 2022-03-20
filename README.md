@@ -8,8 +8,9 @@ URS : algorithm study with Undergraduate Research Students
 
 1. LAB  
     1. [Leet222. Maximal Square](#leet222-maximal-square) (22.02.22)
-    2. [Leet011. Container With Most Water](#leet011-container-with-most-water) (22.03.14)
-    3. ...
+    2. [Leet011. Container With Most Water](#leet011-container-with-most-water) (22.03.08)
+    3. [Leet022. Generate Parentheses](#leet022-generate-parentheses) (22.03.15)
+    4. ...
 2. URS
     1. [Binary Search](#binary-search) (22.03.04)
     2. [Graph](#graph) (22.03.11)
@@ -99,6 +100,31 @@ Output: 1
     </div>
     </details>
 ---
+### Leet022. Generate Parentheses
+<details>
+    <summary>Details</summary>
+    <div markdown="1">
+        <p>https://leetcode.com/problems/generate-parentheses/</br>
+    Given <code>n</code> pairs of parentheses, write a function to <i>generate all combinations of well-formed parentheses.</i></br></br>
+    
+**Example 1:**
+
+```
+Input: n = 3
+Output: ["((()))","(()())","(())()","()(())","()()()"]
+```
+
+**Example 2:**
+
+```
+Input: n = 1
+Output: ["()"]
+```
+
+**Constraints:**
+* <code>1 <= n <= 8</code>
+    </div>
+    </details>
 ---
 ### Binary Search
 #### 1. Leet441. Arranging Coins
