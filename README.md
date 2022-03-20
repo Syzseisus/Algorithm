@@ -18,6 +18,7 @@ URS : algorithm study with Undergraduate Research Students
 ---
 
 ### Leet221. Maximal Square
+[code](https://github.com/Syzseisus/Algorithm/blob/main/Leet221_Maximal_Square.py)  
 <details>
   <summary>Details</summary>
   <div markdown="1">
@@ -60,6 +61,7 @@ Output: 0
 
 ---
 ### Leet011. Container With Most Water
+[code](https://github.com/Syzseisus/Algorithm/blob/main/Leet011_Container_With_Most_Water.py)
 <details>
     <summary>Details</summary>
     <div markdown="1">
@@ -101,6 +103,7 @@ Output: 1
     </details>
 ---
 ### Leet022. Generate Parentheses
+[code](https://github.com/Syzseisus/Algorithm/blob/main/Leet022_Generate_Parentheses.py)
 <details>
     <summary>Details</summary>
     <div markdown="1">
@@ -128,6 +131,8 @@ Output: ["()"]
 ---
 ### Binary Search
 #### 1. Leet441. Arranging Coins
+[code1](https://github.com/Syzseisus/Algorithm/blob/main/Leet441_Arranging_coins.py)
+[code2_BS](https://github.com/Syzseisus/Algorithm/blob/main/Leet441_Arranging_coins_BS.py)
 <details>
     <summary>Details</summary>
     <div markdonw="1">
@@ -163,6 +168,7 @@ Explanation: Because the 4<sup>th</sup> row is incomplete,
     </div></details>
 
 #### 2. P43238. 입국심사
+[code](https://github.com/Syzseisus/Algorithm/blob/main/P43238_Immigration.py)
 <details>
     <summary>Details</summary>
     <div markdonw="1">
@@ -253,4 +259,5 @@ Output: [[0,4],[0,3,4],[0,1,3,4],[0,1,2,3,4],[0,1,4]]
 </details>
 
 #### 2. Dijkstra's Algorithm
+[code](https://github.com/Syzseisus/Algorithm/blob/main/Dijkstra.ipynb)
 [ShortestPath-Dijkstra-std.pdf](https://github.com/Syzseisus/Algorithm/files/8311431/ShortestPath-Dijkstra-std.pdf)
