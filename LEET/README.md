@@ -7,18 +7,19 @@ URS : algorithm study with Undergraduate Research Students
 ## Contents
 
 1. LAB  
-    1. [Leet221. Maximal Square](#leet221-maximal-square) (22.02.22)
-    2. [Leet011. Container With Most Water](#leet011-container-with-most-water) (22.03.08)
-    3. [Leet022. Generate Parentheses](#leet022-generate-parentheses) (22.03.15)
+    1. [Leet0221. Maximal Square](#leet0221-maximal-square) (22.02.22)
+    2. [Leet0011. Container With Most Water](#leet0011-container-with-most-water) (22.03.08)
+    3. [Leet0022. Generate Parentheses](#leet0022-generate-parentheses) (22.03.15)
     4. ...
+    5. [Leet0743. Network Delay Time](#leet0743-network-delay-time) (23.05.29)
 2. URS
     1. [Binary Search](#binary-search) (22.03.04)
     2. [Graph](#graph) (22.03.11)
     3. ...
 ---
 
-### Leet221. Maximal Square
-[code](https://github.com/Syzseisus/Algorithm/blob/main/Leet221_Maximal_Square.py)  
+### Leet0221. Maximal Square
+[code](https://github.com/Syzseisus/Algorithm/blob/main/Leet0221_Maximal_Square.py)  
 <details>
   <summary>Details</summary>
   <div markdown="1">
@@ -60,8 +61,8 @@ Output: 0
  
 
 ---
-### Leet011. Container With Most Water
-[code](https://github.com/Syzseisus/Algorithm/blob/main/Leet011_Container_With_Most_Water.py)
+### Leet0011. Container With Most Water
+[code](https://github.com/Syzseisus/Algorithm/blob/main/Leet0011_Container_With_Most_Water.py)
 <details>
     <summary>Details</summary>
     <div markdown="1">
@@ -102,8 +103,8 @@ Output: 1
     </div>
     </details>
 ---
-### Leet022. Generate Parentheses
-[code](https://github.com/Syzseisus/Algorithm/blob/main/Leet022_Generate_Parentheses.py)
+### Leet0022. Generate Parentheses
+[code](https://github.com/Syzseisus/Algorithm/blob/main/Leet0022_Generate_Parentheses.py)
 <details>
     <summary>Details</summary>
     <div markdown="1">
@@ -129,6 +130,47 @@ Output: ["()"]
     </div>
     </details>
 ---
+### Leet0743. Network Delay Time
+[code](https://github.com/Syzseisus/Algorithm/blob/main/LEET/0743_Network_Delay_Time.py)
+<details>
+    <summary>Details</summary>
+    <div markdown="1">
+        <p>https://leetcode.com/problems/network-delay-time/description/</br>
+    You are given a network of <code>n</code> nodes, labeled from <code>1</code> to <code>n. You are also given times, a list of travel times as directed edges <code>times[i] = (ui, vi, wi)</code>, where <code>ui</code> is the source node, <code>vi</code> is the target node, and <code>wi</code> is the time it takes for a signal to travel from source to target.</br>
+
+    We will send a signal from a given node <code>k</code>. Return the minimum time it takes for all the <code>n nodes to receive the signal. If it is impossible for all the <code>n</code> nodes to receive the signal, return <code>-1</code>.</br></br>
+
+**Example 1:**
+
+![image](https://github.com/Syzseisus/Algorithm/assets/83002480/d5fd03cc-30c4-4070-a26e-94ca0f29a852)
+```
+Input: times = [[2, 1, 1], [2, 3, 1], [3, 4, 1]], n = 4, k = 2
+Output: 2
+```
+
+**Example 2:**
+
+```
+Input: times = [[1, 2, 1]], n = 2, k = 1
+Output: 2
+```
+
+**Example 3**
+```
+Input: times = [[1, 2, 1]], n = 2, k = 2
+Output: -1
+```
+
+**Constrains**
+* <code>1 \ge k \ge n 100</code>
+* <code>1 \ge times.length </code>
+* <code>times[i].length == 3</code>
+* <code>1 <= u_i, v_i <= n</code>
+* <code>u_i != v_i <n/coda>
+* All the pairs <code>
+
+
+
 ### Binary Search
 #### 1. Leet441. Arranging Coins
 [code1](https://github.com/Syzseisus/Algorithm/blob/main/Leet441_Arranging_coins.py)
