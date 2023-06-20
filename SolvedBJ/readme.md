@@ -225,6 +225,7 @@
 |1085|[직사각형에서 탈출](https://www.acmicpc.net/problem/1085)|0,11|22-06-29|
 |1094|[막대기](https://www.acmicpc.net/problem/1094)|0,24|22-08-14|
 |1107|[리모컨](https://www.acmicpc.net/problem/1107)|7|22-12-07|
+|1149|[RGB거리](https://www.acmicpc.net/problem/1149)|2|23-06-20|
 |1124|[언더프라임](https://www.acmicpc.net/problem/1124)|0,10,39,50|22-08-04|
 |1152|[단어의 개수](https://www.acmicpc.net/problem/1152)|1,5|22-09-28|
 |1157|[단어 공부](https://www.acmicpc.net/problem/1157)|1,5|22-09-29|
