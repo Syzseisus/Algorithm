@@ -272,6 +272,7 @@
 |1874|[스택 수열](https://www.acmicpc.net/problem/1874)|3,35|22-10-21|
 |1911|[흙길 보수하기](https://www.acmicpc.net/problem/1911)|9,29|22-09-16|
 |1920|[수 찾기](https://www.acmicpc.net/problem/1920)|3,9,15|22-10-19|
+|1923|[정수 삼각형](https://www.acmicpc.net/problem/1932)|2|23-06-27|
 |1927|[최소 힙](https://www.acmicpc.net/problem/1927)|3,34|22-11-16|
 |1929|[소수 구하기](https://www.acmicpc.net/problem/1929)|0,10,39,50|22-10-20|
 |1931|[회의실 배정](https://www.acmicpc.net/problem/1931)|6,9|22-11-24|
