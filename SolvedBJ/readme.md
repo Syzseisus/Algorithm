@@ -279,6 +279,7 @@
 |1940|[주몽](https://www.acmicpc.net/problem/1940)|9,36|22-08-30|
 |1966|[프린터 큐](https://www.acmicpc.net/problem/1966)|1,3,18,94|22-10-16|
 |1978|[소수 찾기](https://www.acmicpc.net/problem/1978)|0,10,39|22-10-11|
+|1991|[트리 순회](https://www.acmicpc.net/problem/1991)|12,47|23-06-28|
 |1992|[쿼드트리](https://www.acmicpc.net/problem/1992)|32,47|22-11-25|
 |2010|[플러그](https://www.acmicpc.net/problem/2010)|0,16|22-07-09|
 |2061|[좋은 암호](https://www.acmicpc.net/problem/2061)|0,7,45|22-07-10|
