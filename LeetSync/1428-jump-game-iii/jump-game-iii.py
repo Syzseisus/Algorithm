@@ -11,16 +11,16 @@ class Solution:
             while queue:
                 curr_ind = queue.pop()
                 
+                if curr_ind in visited:
+                    continue
+                visited.add(curr_ind)
+                
                 if curr_ind < 0:
                     continue
                 elif curr_ind >= N:
                     continue
                 elif arr[curr_ind] == 0:
                     return True
-                
-                if curr_ind in visited:
-                    continue
-                visited.add(curr_ind)
                 
                 queue.append(curr_ind + arr[curr_ind])
                 queue.append(curr_ind - arr[curr_ind])
