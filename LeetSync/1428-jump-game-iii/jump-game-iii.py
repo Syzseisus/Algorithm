@@ -1,12 +1,9 @@
-from collections import deque
-
-
 class Solution:
     def canReach(self, arr: List[int], start: int) -> bool:
         N = len(arr)
 
         def bfs(start_ind):
-            queue = deque([start_ind])
+            queue = [start_ind]
             visited = set()
             while queue:
                 curr_ind = queue.pop()
