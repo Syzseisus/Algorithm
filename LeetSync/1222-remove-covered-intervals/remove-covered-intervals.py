@@ -4,6 +4,7 @@ class Solution:
         end = 0
         intervals.sort(key=lambda x: (x[0], -x[1]))
         for _, e in intervals:
-            answer += e > end
-            end = max(end, e)
+            if e > end:
+                answer += 1
+                end = e
         return answer
