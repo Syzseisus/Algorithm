@@ -1,7 +1,7 @@
 class Solution:
     def appendCharacters(self, s: str, t: str) -> int:
-        if t in s:
-            return 0
+        # if t in s:
+        #     return 0
         
         # s, t를 앞부터 탐색하면서
         i = j = 0
