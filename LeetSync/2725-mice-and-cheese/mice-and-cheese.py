@@ -9,11 +9,12 @@ class Solution:
     즉 1번쥐가 먹는 게 더 이득인 치즈들을 k개 가져오면 된다.
     '''
     def miceAndCheese(self, reward1: List[int], reward2: List[int], k: int) -> int:
-        real_reward = [r2 - r1 for r1, r2 in zip(reward1, reward2)]
-        hq.heapify(real_reward)
+        reward_diff = []
+        for i, r1 in enumerate(reward1):
+            hq.heappush(reward_diff, (reward2[i]- r1))
         answer = sum(reward2)
         for _ in range(k):
-            a = hq.heappop(real_reward)
+            a = hq.heappop(reward_diff)
             answer -= a
         
         return answer
