@@ -17,5 +17,3 @@ class Solution:
             # 좀 더 빠르게 종료하기 위해 1개짜리 두 개되면 바로 종료
             if cnt == 2:
                 return answer
-        
-        return answer
