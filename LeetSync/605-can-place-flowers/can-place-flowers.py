@@ -7,15 +7,15 @@ class Solution:
         length = len(flowerbed)
 
         # 예외처리 2
-        # 길이가 3 이하일 때는 
+        # 길이가 2 이하일 때는 
         if length == 1:
             return bool(not flowerbed[0])
         
-        elif length == 2:
-            if n == 2:
-                return False
-            elif n == 1:
-                return bool(not sum(flowerbed))
+        # elif length == 2:
+        #     if n == 2:
+        #         return False
+        #     elif n == 1:
+        #         return bool(not sum(flowerbed))
 
         # elif length == 3:
         #     if n == 3:
