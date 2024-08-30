@@ -1,10 +1,13 @@
 class Solution:
     def canPlaceFlowers(self, flowerbed: List[int], n: int) -> bool:
-        length = len(flowerbed)
-
+        # 예외처리 1: n = 0이면 무조건 됨
         if n == 0:
             return True
 
+        length = len(flowerbed)
+
+        # 예외처리 2
+        # 길이가 3 이하일 때는 
         if length == 1:
             return bool(not flowerbed[0])
         
@@ -14,19 +17,19 @@ class Solution:
             elif n == 1:
                 return bool(not sum(flowerbed))
 
-        elif length == 3:
-            if n == 3:
-                return False
-            elif n == 2:
-                if sum(flowerbed):
-                    return False
-                else:
-                    return True
-            elif n == 1:
-                if flowerbed[1]:
-                    return False
-                else:
-                    return sum(flowerbed) != 2
+        # elif length == 3:
+        #     if n == 3:
+        #         return False
+        #     elif n == 2:
+        #         if sum(flowerbed):
+        #             return False
+        #         else:
+        #             return True
+        #     elif n == 1:
+        #         if flowerbed[1]:
+        #             return False
+        #         else:
+        #             return sum(flowerbed) != 2
 
         # index가 홀수인 애들 -> 짝수인 애들 순으로 심어보기
         odd_first = n
