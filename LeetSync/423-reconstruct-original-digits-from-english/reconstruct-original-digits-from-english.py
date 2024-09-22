@@ -14,31 +14,31 @@ owoztneoer -> zero one two
 '''
 class Solution:
     def originalDigits(self, s: str) -> str:
-        char_count = Counter(s)
+        num_str = Counter(s)
         
         # 각 숫자에 해당하는 문자가 몇 번 씩 나왔는지 세는 리스트
-        count = [0 for _ in range(10)]
+        cnt = [0 for _ in range(10)]
         
         # 각 숫자마다 고유한 문자 세기
         # - 'z'가 하나 있으면 'ero'도 각각 하나 씩 무조건 있어서 셀 필요 없음
         # - guaranteed to be valid 조건
-        count[0] = char_count['z']
-        count[2] = char_count['w']
-        count[4] = char_count['u']
-        count[6] = char_count['x']
-        count[8] = char_count['g']
+        cnt[0] = num_str['z']
+        cnt[2] = num_str['w']
+        cnt[4] = num_str['u']
+        cnt[6] = num_str['x']
+        cnt[8] = num_str['g']
         
         # 여러 곳에서 나오는 거 세기
         # 이미 셌던 0, 2, 4, 6, 8은 개수 고정이니까
         # 다른 애들은 그거 기반으로 뺴주면 됨
         # 1. 두 곳에서 나오는 거
-        count[3] = char_count['h'] - count[8]
-        count[5] = char_count['f'] - count[4]
-        count[7] = char_count['s'] - count[6]
+        cnt[3] = num_str['h'] - cnt[8]
+        cnt[5] = num_str['f'] - cnt[4]
+        cnt[7] = num_str['s'] - cnt[6]
         
         # 2. 더 많은 곳에서 나오는 거
-        count[1] = char_count['o'] - count[0] - count[2] - count[4]
-        count[9] = char_count['i'] - count[5] - count[6] - count[8]
+        cnt[1] = num_str['o'] - cnt[0] - cnt[2] - cnt[4]
+        cnt[9] = num_str['i'] - cnt[5] - cnt[6] - cnt[8]
         
         # 정답은 숫자로
-        return ''.join(str(i) * count[i] for i in range(10))
+        return ''.join(str(i) * cnt[i] for i in range(10))
