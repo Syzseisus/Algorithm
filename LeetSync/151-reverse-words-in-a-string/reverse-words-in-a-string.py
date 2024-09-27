@@ -1,6 +1,7 @@
 from collections import deque
 
 class Solution:
+    # 세 번 평균 
     def reverseWords(self, s: str) -> str:
         # deque로 word 하나씩 stack 쌓기
         words = deque([])
