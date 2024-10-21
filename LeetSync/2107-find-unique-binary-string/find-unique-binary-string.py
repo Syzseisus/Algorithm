@@ -3,6 +3,6 @@ class Solution:
         digit = len(nums[0])
         appear = set(nums)
         for decimal in range(2 ** digit):
-            binary = str(bin(decimal))[2:].rjust(digit, '0')
+            binary = bin(decimal)[2:].rjust(digit, '0')
             if binary not in appear:
                 return binary
