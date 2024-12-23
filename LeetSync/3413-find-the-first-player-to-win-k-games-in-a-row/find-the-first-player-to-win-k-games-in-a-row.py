@@ -1,3 +1,29 @@
+# 1번 풀이 : 있는 그대로 구현
+from collections import deque
+class Solution:
+    def findWinningPlayer(self, skills: List[int], k: int) -> int:
+        # 처음 index를 유지하기 위한 dictionary
+        players = {s: i for i, s in enumerate(skills)}
+        # k 조정
+        #   - 전체 리스트를 다 보고 나면 이길 애는 skill level 제일 높은 애임
+        k = min(k, len(skills) - 1)
+        queue = deque(skills)
+        win = 0
+        a = queue.popleft()
+        while win != k:
+            b = queue.popleft()
+            if a > b:
+                win += 1
+                queue.append(b)
+            elif b > a:
+                win = 1
+                a, b = b, a
+                queue.append(b)
+        
+        return players[a]
+
+
+# # 2번 풀이 : "뒤로 보내기" 안 하기
 # class Solution:
 #     def findWinningPlayer(self, skills: List[int], k: int) -> int:
 #         n = len(skills)
@@ -23,24 +49,3 @@
 #         # 아까 조정했던 거처럼, 전체 리스트 다 보고 나면 (for 문 끝나면)
 #         # 첫 번째에는 skill level이 제일 높은 애가 있고, 걔가 정답
 #         return i
-
-
-from collections import deque
-class Solution:
-    def findWinningPlayer(self, skills: List[int], k: int) -> int:
-        players = {s: i for i, s in enumerate(skills)}
-        k = min(k, len(skills))
-        queue = deque(skills)
-        win = 0
-        a = queue.popleft()
-        while win != k:
-            b = queue.popleft()
-            if a > b:
-                win += 1
-                queue.append(b)
-            elif b > a:
-                win = 1
-                a, b = b, a
-                queue.append(b)
-        
-        return players[a]
