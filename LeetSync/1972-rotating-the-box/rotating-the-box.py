@@ -4,6 +4,8 @@ class Solution:
         # rotated: m x n
         m = len(boxGrid)
         n = len(boxGrid[0])
+        
+        # 회전시키기
         rotated = [[None for _ in range(m)] for _ in range(n)]
         for i in range(n):
             for j in range(m):
@@ -20,7 +22,7 @@ class Solution:
                     lowest_empty_row -= 1  # 채웠으니까 올리기
                 
                 # 현재 행이 장애물이면 `lowest_empty_row`를 현재 행의 위로 설정
-                if rotated[i][j] == "*":
+                elif rotated[i][j] == "*":
                     lowest_empty_row = i - 1
 
         return rotated
