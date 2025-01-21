@@ -7,21 +7,22 @@ class Solution:
         m = len(matrix)
         n = len(matrix[0])
 
-        # 0이 있는 column 체크
+        # 0이 있는 column 체크를 위한 리스트
         zero_cols = [False for _ in range(n)]
-        flag = False  # 
+
+        # row를 0으로 만들기
         for row in matrix:
+            # row에 0이 있다면
             if 0 in row:
+                # 그 줄 전체 0으로 만들기
                 for i, r in enumerate(row):
+                    # 0인 column 체크
                     if r == 0:
                         zero_cols[i] = True
-                        flag = True
                     row[i] = 0
 
-        if flag:
-            for i, zero in enumerate(zero_cols):
-                if zero:
-                    for r in range(m):
-                        matrix[r][i] = 0
-        else:
-            matrix = None
+        # column을 0으로 만들기
+        for i, zero in enumerate(zero_cols):
+            if zero:
+                for r in range(m):
+                    matrix[r][i] = 0
