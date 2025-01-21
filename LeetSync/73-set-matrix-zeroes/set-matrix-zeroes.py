@@ -24,4 +24,4 @@ class Solution:
                     for r in range(m):
                         matrix[r][i] = 0
         else:
-            return -1
+            matrix = None
