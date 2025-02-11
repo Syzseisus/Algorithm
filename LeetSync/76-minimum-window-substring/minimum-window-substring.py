@@ -53,4 +53,5 @@ class Solution:
         # right가 갱신이 안됐다 == 불가능하다
         if min_right > m:
             return ""
+        # 정답은 right를 포함해야되니까 +1 해서 indexing 하기
         return s[min_left:min_right + 1]
