@@ -38,9 +38,6 @@ class Solution:
                         num_visited += 1               # 3) num_visited 추가
                 # 끝나면 현재 위치 업데이트
                 col = c
-                print('r')
-                print('answer:', answer)
-                print('curr:', row, col)
             elif turn[curr_turn] == 'd':
                 for r in range(row + 1, m):
                     if (r, col) in visited:
@@ -51,9 +48,6 @@ class Solution:
                         visited.add((r, col))
                         num_visited += 1
                 row = r
-                print('d')
-                print('answer:', answer)
-                print('curr:', row, col)
             elif turn[curr_turn] == 'l':
                 for c in range(col - 1, -1, -1):
                     if (row, c) in visited:
@@ -64,9 +58,6 @@ class Solution:
                         visited.add((row, c))
                         num_visited += 1
                 col = c
-                print('l')
-                print('answer:', answer)
-                print('curr:', row, col)
             elif turn[curr_turn] == 'u':
                 for r in range(row - 1, -1, -1):
                     if (r, col) in visited:
@@ -77,9 +68,6 @@ class Solution:
                         visited.add((r, col))
                         num_visited += 1
                 row = r
-                print('u')
-                print('answer:', answer)
-                print('curr:', row, col)
 
             curr_turn = (curr_turn + 1) % 4  # curr_turn 이동
         
