@@ -83,16 +83,20 @@ class Solution:
                 tmp = Counter({k: v * count for k, v in tmp.items()})
                 # 그전 Counter에다가 괄호 내용을 업데이트
                 stack[-1] = tmp + stack[-1]  # !! ddict랑 요기가 다름
+            # 대문자여야 시작 가능함
             elif s.isupper():
+                # 소문자까지 해서 전체 다 가져오기
                 index += 1
                 atom = s
                 while index < len(formula) and formula[index].islower():
                     atom += formula[index]
                     index += 1
-                
-                count, index = self.get_count(formula, index)
-                prev_tmp = stack[-1]
-                prev_tmp[atom] += count
 
+                # `count` 가져와서 그전 Counter에다가 업데이트
+                count, index = self.get_count(formula, index)
+                stack[-1][atom] += count
+
+        # sorting 해야됨
+        # 근데 '1'은 생략해야되니까 if 문 처리
         sorted_tmp = sorted([f"{atom}" if count == 1 else f"{atom}{count}" for atom, count in stack[-1].items()])
         return "".join(sorted_tmp)
