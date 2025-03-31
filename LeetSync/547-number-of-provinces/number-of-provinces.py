@@ -5,7 +5,7 @@ class Solution:
             visited[curr] = True
             for ngbr in range(n):
                 if isConnected[curr][ngbr] and not visited[ngbr]:
-                    visited[ngbr] = True
+                    # visited[ngbr] = True
                     dfs(ngbr)
 
                 if not visited[i]:
