@@ -1,9 +1,5 @@
 class Solution:
     def outerTrees(self, trees: List[List[int]]) -> List[List[int]]:
-        # # 예외 케이스
-        # if len(trees) <= 1:
-        #     return trees
-        
         # 기울기 차 구하는 함수
         def tan_diff(a, b, c) -> int:
             '''
@@ -23,10 +19,10 @@ class Solution:
         upper = []
         for point in points:
             while len(lower) >= 2 and tan_diff(lower[-2], lower[-1], point) > 0:
-                # 아래부분에서는 새로운 point의 기울기가 더 커야함
+                # 새로운 point로 인해 기울기가 커지면 볼록성이 깨짐
                 lower.pop()
             while len(upper) >= 2 and tan_diff(upper[-2], upper[-1], point) < 0:
-                # 윗부분에서는 새로운 point의 기울기가 더 작아야함
+                # 새로운 point로 인해 기울기가 작아지면 볼록성이 깨짐
                 upper.pop()
             lower.append(point)
             upper.append(point)
